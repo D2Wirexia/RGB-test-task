@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Test #1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/statement.css" type="text/css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+
+</head>
+<body>
+<div id="front">
+    <header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <div class="logo">
+                    <img src="img/logo.jpg" alt="Logo">
+                </div>
+                <nav class="nav">
+                    <a class="nav_menu" href="#">Услуги</a>
+                    <a class="nav_menu" href="#project_grid">Проекты</a>
+                    <a class="nav_menu" href="#">О нас</a>
+                    <a class="nav_menu" href="#">Цены</a>
+                    <a class="nav_menu" href="#">Контакты</a>
+                    <a class="nav_menu phone" href="#">+7 342 225-00-75</a>
+                    <a class="popup nav_menu" href="#" rel="statement">
+                        <span id="btw-menu">Консультация</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="statement">
+        <div class="exit">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="form">
+            <div class="title">
+                <h1>С РАДОСТЬЮ ОБСУДИМ ВАШУ ИДЕЮ</h1>
+                <p>Просто расскажите о своих задумках, а мы придумаем, как их воплотить</p>
+            </div>
+            <form id="filling__out">
+                <div id="t1">
+                    <input type="text" name="name" placeholder="Представьтесь, пожалуйста" class="input_log" id="name">
+                </div>
+                <div id="t2">
+                    <input type="text" name="project" placeholder="Расскажите немного о Вашем проекте" class="input_log">
+                </div>
+                <div id="t3">
+                    <input type="text" name="phone" placeholder="+7 (___) ___-__-__" class="input_log" id="phone">
+                </div>
+                <div class="load_file">
+                    <input type="file" class="Attach__file" id="Attach_file">
+                    <label for="Attach_file">
+                        <i class="far fa-file"></i>Прикрепить файл
+                    </label>
+                </div>
+
+                <div class="footer_fil">
+                    <input type="submit" value="Отправить" onclick="ValidPhone(); ValidName();" name="button" class="btw-send" disabled="disabled;" id="submit">
+                    <div class="agreement">
+                        <input type="checkbox" name="checkbox" class="mark" id="mark" onchange="document.getElementById('submit').disabled = !this.checked;">
+                        <label for="mark">Я согласен на обработку
+                            <a href="#">персональных данных</a>
+                        </label>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="inner">
+        <div class="backgroundLogo">
+            <div class="backgroundLogo__img">
+                <img src="img/inner.jpeg" alt="side" />
+            </div>
+        </div>
+        <div id="slides">
+            <div class="slide">
+                <div class="inner__info">
+                    <div class="inner__h1">Разработка и продвижение сайтов</div>
+                    <div class="inner__bonus">Эффективные решения для бизнеса в интернете</div>
+                    <a class="buttons" href="#project_grid">
+                        <span class="main__button">Посмотреть проекты</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <a name="project_grid"></a>
+    <div class="grid">
+            <div>
+                <div class="project1">
+                    <div class="description">сайт официального дистрибьютора «Exxon Mobil»</div>
+                    <div class="subjects">Корпоративный сайт</div>
+                </div>
+            </div>
+            <div>
+                <div class="project2">
+                    <div class="description">Бот-консультант федерального застройщика «Талан»</div>
+                    <div class="subjects">Чат-бот</div>
+                </div>
+            </div>
+            <div>
+                <div class="project3">
+                    <div class="dark_back"></div>
+                    <div class="description">сайт онлайн фитнес-клуба «TeenWeek»</div>
+                    <p>Проект раскрывает секреты красоты и стройной фигуры, а советы профессионалов делают тренировки интересными и полезными.</p>
+                    <div class="subjects">Веб-приложение</div>
+                    <div class="subjects">Брендинг</div>
+                </div>
+            </div>
+            <div>
+                <div class="project4">
+                    <div class="description">дизайн и надежная поддержка магазина «Baseg»</div>
+                    <div class="subjects">Интернет магазин</div>
+                </div>
+            </div>
+            <div>
+                <div class="project5">
+                    <div class="description">Красивые решения для производства насосов ППД</div>
+                    <div class="subjects">Корпоративный сайт</div>
+                </div>
+            </div>
+            <div>
+                <div class="project6">
+                    <div class="description">Сайт кабельной и электропродукции «Кайрос инжиниринг»</div>
+                    <div class="subjects">Корпоративный сайт</div>
+                </div>
+            </div>
+            <div>
+                <div class="project7">
+                    <div class="description">Ярко представили работы для «ГеоСпецТехнология»</div>
+                    <div class="subjects">Брендинг</div>
+                    <div class="subjects">Корпоративный сайт</div>
+                </div>
+            </div>
+        </div>
+    <div class="final-btw">
+        <a class="buttons" href="#">Показать ещё
+            <i class="fas fa-plus"></i>
+        </a>
+    </div>
+    <script src="js/style.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/Valid.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+/*переделать*/
+@media screen and (max-width:800px) {
+    /*Popup*/
+    .statement{
+        max-width: 100%;
+        max-height: 100vh;
+        background: url("../img/illustration.jpg") 100% 100% no-repeat;
+    }
+    .exit{
+        top: 5px;
+        right: 5px;
+        font-size: 30px;
+    }
+    .form{
+        margin-left: 20px;
+    }
+    .title{
+        display: block;
+    }
+    .title h1{
+        font-size: 50px;
+        width: 100%;
+    }
+    .title p{
+        width: 100%;
+        left: 20px;
+        top: -100px;
+    }
+    #filling__out{
+        margin-top: -90px;
+        grid-gap: 10px;
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fill, 400px);
+        grid-template-rows: repeat(auto-fill, 60px);
+        margin-left: 30px;
+    }
+    #t1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #t2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #t3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .input_log {
+        height: 60px;
+        margin-top: 0;
+    }
+    /* Header */
+
+    /* Inner */
+    .inner{
+
+        margin: auto;
+    }
+    .backgroundLogo{
+        display: none;
+    }
+    .inner__info{
+        left: 100%;
+        transform: translate(50%, 0);
+        width: 90%;
+
+
+    }
+    .inner__h1{
+        max-width: 450px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    .inner__bonus{
+        position: relative;
+        margin-top: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .buttons{
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .dot{
+        display: none;
+    }
+    /*Grid*/
+    .grid{
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-gap: 15px;
+        max-width: 360px;
+        margin: 400px auto 40px;
+        grid-template-areas:
+                "project1"
+                "project4"
+                "project5"
+                "project6"
+                "project7";
+    }
+    .grid div:nth-child(2), .grid div:nth-child(3){
+        display: none;
+    }
+}
+@media screen and (min-width:800px) and (max-width: 1200px){
+    /*Popup*/
+    .statement{
+        max-width: 90%;
+        max-height: 90vh;
+        border-radius: 10px;
+        background: url("../img/illustration.jpg") 100% 100% no-repeat;
+    }
+
+    .form{
+        margin-left: 20px;
+    }
+    .title{
+        display: block;
+    }
+    .title h1{
+        font-size: 50px;
+        width: 100%;
+    }
+    .title p{
+        width: 100%;
+        left: 20px;
+        top: -100px;
+    }
+    #filling__out{
+        margin-top: -90px;
+        margin-left: 30px;
+    }
+    /* Inner */
+    .inner{
+        height: auto;
+        margin: 150px auto;
+    }
+
+    .inner__info{
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+    }
+    .inner__h1{
+        max-width: 450px;
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    .inner__bonus{
+        position: relative;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .buttons{
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .dot{
+        display: none;
+    }
+    /*Grid*/
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        max-width: 720px;
+        grid-gap: 15px;
+        margin: 400px auto 40px;
+        grid-template-areas:
+                "project1 project4"
+                "project2 project2"
+                "project3 project3"
+                "project5 project7";
+    }
+    .grid div:nth-child(6){
+        display: none;
+    }
+}

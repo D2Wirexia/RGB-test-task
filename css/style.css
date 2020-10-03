@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akrobat Light';
+}
+@font-face {
+    font-family: 'Akrobat Light';
+    src: url('Akrobat-Light.eot');
+    src: url('Akrobat-Light.eot?#iefix') format('embedded-opentype'),
+    url('Akrobat-Light.woff') format('woff'),
+    url('Akrobat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+.header__menu {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    transform: scale(.75);
+
+}
+.nav{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.nav_menu{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    color: rgb( 66, 81, 91 );
+    font-weight: bold;
+    line-height: 4.063;
+    z-index: 100;
+    margin: 0 15px;
+    padding: 0;
+    transition: color .1s linear;
+}
+.nav_menu:hover{
+    color: rgb( 17, 122, 247 );
+}
+.phone, #btw-menu{
+    color: rgb( 17, 122, 247 );
+    transition: color .1s linear;
+}
+.phone:hover{
+    color: rgb( 66, 81, 91 );
+}
+#btw-menu{
+    border-radius: 50px;
+    border: 2px solid rgb( 17, 122, 247 );
+    padding: 8px 25px;
+
+}
+#btw-menu:hover{
+    color: #fff;
+    background: rgb( 17, 122, 247 );
+    box-shadow: 0 0 5px rgb( 17, 122, 247 );
+}
+
+/* Inner */
+#front{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.inner{
+
+}
+.backgroundLogo{
+    position: absolute;
+    bottom: 0;
+}
+
+.backgroundLogo__img{
+    position: relative;
+}
+#slides{
+    position: absolute;
+    transform: scale(.8);
+    margin-top: 170px;
+
+
+}
+.slide{
+    float: right;
+    right: 0;
+    position: absolute;
+}
+.inner__info{
+    left: 100px;
+    position: absolute;
+    width: 200px;
+}
+.inner__h1{
+    width: 390px;
+    height: 170px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.3;
+    z-index: 74;
+    color: rgb( 66, 81, 91 );
+    position: absolute;
+
+}
+.inner__bonus{
+    font-size: 16px;
+    font-family: "Ubuntu";
+    color: rgb( 66, 81, 91 );
+    line-height: 2.063;
+    position: relative;
+    z-index: 75;
+    margin-top: 200px;
+
+}
+.buttons{
+    width: 255px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    line-height: 4.063;
+    position: absolute;
+    z-index: 72;
+    background: rgb( 17, 122, 247 );
+    border-radius: 50px;
+    padding: 0 30px;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+    margin-top: 15px;
+}
+.buttons i{
+    font-size: 16px;
+    padding-left: 15px;
+}
+.buttons:hover{
+    background: rgb(33, 150, 255);
+    box-shadow: 1px 2px 4px rgba( 17, 122, 247, .7);
+}
+.dot{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    margin: 0 2px;
+    top: 110px;
+    cursor: pointer;
+    box-shadow:  inset -1px -1px 5px #828282,
+                inset 1px 1px 5px #828282;
+    left: 7%;
+}
+.dots .active{
+    box-shadow: inset -1px -1px 10px rgba(87, 87, 87, 0.84),
+                inset 1px 1px 10px rgba(87, 87, 87, 0.84);
+}
+.dot:hover{
+    transform: scale(.9);
+}
+/* Grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-auto-rows: 360px;
+    grid-gap: 30px;
+    position: relative;
+    max-width: 1150px;
+    width: 100%;
+    margin: 200px auto 40px;
+    grid-template-areas:
+        "project1 project2 project2"
+        "project3 project3 project4"
+        "project5 project6 project7";
+}
+.grid div:nth-child(1){
+    grid-area: project1;
+}
+.grid div:nth-child(2){
+    grid-area: project2;
+}
+.grid div:nth-child(3){
+
+    grid-area: project3;
+}
+.grid div:nth-child(4){
+    grid-area: project4;
+}
+.grid div:nth-child(5){
+    grid-area: project5;
+}
+.grid div:nth-child(6){
+    grid-area: project6;
+}
+.grid div:nth-child(7){
+    grid-area: project7;
+}
+.project1{
+    background: url("../img/Project_Back1.jpg");
+    width: 100%;
+    height: 100%;
+}
+.project2{
+    background: url("../img/Project_Back2.jpg");
+    width: 100%;
+    height: 100%;
+}
+.project3{
+    background: url("../img/Project_Back3.jpg");
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.dark_back{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    transition: all .1s linear;
+}
+.project3 p{
+    width: 300px;
+    height: 85px;
+    z-index: 131;
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgb( 255, 255, 255 );
+    line-height: 1.786;
+    opacity: 0;
+    padding: 110px 0 0 30px;
+    position: absolute;
+    transition: opacity .1s linear;
+}
+.project3:hover .dark_back{
+    opacity: .4;
+}
+.project3:hover p{
+    opacity: 0.9;
+}
+
+.project4{
+    background: url("../img/Project_Back4.jpg");
+    width: 100%;
+    height: 100%;
+}
+.project5{
+    background: url("../img/Project_Back5.jpg");
+    width: 100%;
+    height: 100%;
+}
+.project6{
+    background: url("../img/Project_Back6.jpg");
+    width: 100%;
+    height: 100%;
+}
+.project6 .description, .project6 .subjects{
+    color: rgb( 66, 81, 91 );
+    background: rgba(255, 255, 255, .3);
+}
+.project7{
+    background: url("../img/Project_Back7.jpg");
+    width: 100%;
+    height: 100%;
+}
+.description {
+    font-size: 20px;
+    font-family: "Akrobat";
+    color: rgb( 255, 255, 255 );
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    position: absolute;
+    min-width: 250px;
+    max-width: 280px;
+    z-index: 12;
+    padding: 30px 0 0 20px;
+}
+.subjects{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Myriad Pro";
+    padding: 8px 15px;
+    background: rgba(32, 32, 32, .3);
+    color: rgb( 255, 255, 255 );
+    border-radius: 40px;
+    position: relative;
+    margin: 300px -15px 30px 30px;
+    overflow: hidden;
+    float: left;
+    z-index: 400;
+}
+
+/* Final-btw */
+.final-btw{
+    position: relative;
+}
+.final-btw .buttons{
+    left: 50%;
+    top: 50%;
+    margin: 20px auto 165px;
+    transform: translate(-50%, -50%);
+}
